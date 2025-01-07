@@ -1,10 +1,10 @@
 import React from 'react';
 
-const TopTracksList = ({ tracks }) => {
+const TopTracksList = ({ tracks, artist }) => {
   return (
-    <div>
-      <h2>Top Tracks</h2>
-      <ul>
+    <div className='topTracksDiv'>
+      <h2 className='topTracksDiv__header'>{artist}'s Top Tracks</h2>
+      <ul className='topTracksDiv__list'>
         {tracks.map((track) => (
           <li key={track.id}>
             <img src={track.album.images[0]?.url} alt={track.name} width="50" />

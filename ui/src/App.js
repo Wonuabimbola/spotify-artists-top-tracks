@@ -5,6 +5,7 @@ import TopTracksList from './components/TopTracksList';
 
 const App = () => {
   const [token, setToken] = useState('');
+  const [artistSearched, setArtistSearched] = useState('');
   const [topTracks, setTopTracks] = useState([]);
 
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
       const artist = await searchArtist(token, query);
       console.log('Artist:', artist); // Debugging line
       if (artist) {
+        setArtistSearched(artist.name);
         const tracks = await getArtistTopTracks(token, artist.id);
         setTopTracks(tracks);
       } else {
@@ -36,7 +38,7 @@ const App = () => {
     <div>
       <h1 className='header'>Spotify Artist Top Tracks</h1>
       <SearchBar onSearch={handleSearch} />
-      <TopTracksList tracks={topTracks} />
+      <TopTracksList tracks={topTracks} artist={artistSearched}/>
     </div>
   );
 };
