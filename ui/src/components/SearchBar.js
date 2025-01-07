@@ -6,6 +6,7 @@ const SearchBar = ({ onSearch }) => {
 
   const handleSearch = () => {
     onSearch(query);
+    setQuery('');
   };
 
   return (
