@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.header {
+.header, .topTracksDiv__header {
   color: rgb(194, 113, 126);
   text-align: center;
 }

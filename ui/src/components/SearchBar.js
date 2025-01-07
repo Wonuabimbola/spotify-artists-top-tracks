@@ -16,7 +16,7 @@ const SearchBar = ({ onSearch }) => {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search for an artist"
+          placeholder="Search for an artist to see their top tracks"
           onKeyDown={e => e.key === 'Enter'? handleSearch() : null}
         />
       </div>
