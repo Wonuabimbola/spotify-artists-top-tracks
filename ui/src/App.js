@@ -21,9 +21,8 @@ const App = () => {
 
     try {
       const artist = await searchArtist(token, query);
-      console.log('Artist:', artist); // Debugging line
       if (artist) {
-        setArtistSearched(artist.name);
+        setArtistSearched(artist.name + "'s");
         const tracks = await getArtistTopTracks(token, artist.id);
         setTopTracks(tracks);
       } else {
