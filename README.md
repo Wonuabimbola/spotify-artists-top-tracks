@@ -9,3 +9,5 @@ Steps to run the app locally:
    SPOTIFY_CLIENT_SECRET=your-client-secret
 3. cd into the ui folder, run 'npm install' and then run 'npm start'.
 4. cd into the backend folder, run 'npm install' and then run 'node server.js'.
+   
+![Screenshot 2025-01-07 at 8 37 54 PM](https://github.com/user-attachments/assets/4fc1bb9d-f7a3-43fe-bd31-87e744c7c1e5)
