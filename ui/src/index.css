@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header, .topTracksDiv__header {
+  color: rgb(194, 113, 126);
+  text-align: center;
+}
+
+.topTracksDiv__list {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+  inline-size: 300px;
+}
+
+
